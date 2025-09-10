@@ -1,0 +1,80 @@
+#OS
+.DS_Store
+Thumbs.db
+
+
+#Node / JavaScript
+#npm/yarn/pnpm
+node_modules/
+
+
+#logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+#cache JS
+.npm
+.eslintcache
+.cache/
+.nyc_output/
+
+
+#Gulp / build / dist
+dist/
+build/
+public/build/
+.tmp/
+.tmp-*
+.sass-cache/
+
+#gulp
+*.min.js.map
+*.min.css.map
+
+#Sass / CSS
+#SASS/LibSass
+.sass-cache/
+
+
+#PHP / Composer
+vendor/
+composer.phar
+#phpunit
+.phpunit.result.cache
+
+
+#Env & secrets
+.env
+.env.local
+.env.*.local
+
+
+#Logs / reports
+logs/
+*.log
+*.log.*
+
+
+#Testing / Coverage
+coverage/
+coverage-*/
+jest-cache/
+.vulture/
+test-results/
+
+
+#IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+
+
+# Others
+uploads/
+tmp/
+.cache-loader/
