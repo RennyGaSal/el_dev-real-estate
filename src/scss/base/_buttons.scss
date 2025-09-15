@@ -1,0 +1,15 @@
+@use "sass:color";
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.button-yellow {
+    @include m.button(v.$yellow, inline-block);    
+}
+
+.button-yellow-block {
+    @include m.button(v.$yellow, block);
+}
+
+.button-green {
+    @include m.button(v.$green, inline);    
+}

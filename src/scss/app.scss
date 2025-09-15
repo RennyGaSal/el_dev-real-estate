@@ -1,5 +1,2 @@
-@use 'base/normalize';
-@use 'base/variables';
-@use 'base/mixins';
-@use 'base/globals';
-@use 'base/utils';
+@forward 'base';
+@forward 'layout';

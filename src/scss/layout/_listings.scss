@@ -1,0 +1,47 @@
+@use "sass:color";
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+@include m.tablet {
+    .container-listings {
+        @include m.grid(3, 2rem);
+    }
+}
+
+.listing {
+    background-color: color.adjust(v.$gray, $lightness: 5%);
+    border: 1px solid color.adjust(v.$darkGray, $lightness: 70%);
+
+    .content-listing {
+        padding: 2rem;
+    }
+
+    h3, p {
+        margin: 0;
+    }
+
+    .price {
+        color: v.$green;
+        font-weight: v.$bold;
+        font-size: 3rem;
+    }
+}
+
+.icons-properties {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        flex: 1;
+        display: flex;
+
+        img {
+            flex: 0 0 3rem;
+            margin-right: 1rem;
+        }
+        p {
+            font-weight: v.$black;
+        }
+    }
+}
