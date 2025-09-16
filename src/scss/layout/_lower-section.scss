@@ -10,6 +10,12 @@
     }
 }
 
+.meta-info {
+    span {
+        color: v.$yellow;
+    }
+}
+
 .entry-blog {
     margin-bottom: 2rem;
 
@@ -17,6 +23,7 @@
         display: grid;
         grid-template-columns: 1fr 2fr;
         column-gap: 2rem;
+        row-gap: 1rem;
     }
 
     &:last-of-type {
@@ -43,7 +50,4 @@
         }
     }
 
-    span {
-        color: v.$yellow;
-    }
 }
