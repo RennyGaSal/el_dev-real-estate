@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container container-header">
+            <div class="bar">
+                <a href="/">
+                    <img src="build/img/logo.svg" alt="Real Estate Logo">
+                </a>
+                <nav class="nav">
+                    <a href="about.html" class="header-link">About Us</a>
+                    <a href="listings.html" class="header-link">Listings</a>
+                    <a href="blog.html" class="header-link">Blog</a>
+                    <a href="contact.html" class="header-link">Contact</a>
+                </nav>
+            </div> <!--.bar-->
+            
+        </div> <!--.container-->
+    </header>
+
+    <main class="container section">
+        <h1>Contact Us</h1>
+
+        <picture>
+            <source srcset="build/img/highlight3.webp" type="image/webp">
+            <source srcset="build/img/highlight3.jpg" type="image/jpeg">
+            <img loading="lazy" src="build/img/highlight3.jpg" alt="Contact Us Image">
+        </picture>
+
+        <h2>Fill out the contact form</h2>
+        <form action="" class="form">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Name</label>
+                <input type="text" placeholder="Your Name" id="name">
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="Your Email" id="email">
+
+                <label for="phone">Phone</label>
+                <input type="tel" placeholder="Your Phone" id="phone">
+
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Property Information</legend>
+
+                <label for="option">Interested in</label>
+                <select id="option">
+                    <option value="" disabled selected>-- Select --</option>
+                    <option value="buy">Buy</option>
+                    <option value="sell">Sell</option>
+                </select>
+
+                <label for="budget">Price or Budget</label>
+                <input type="number" placeholder="Your Price or Budget" id="budget">
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Preference</legend>
+
+                <p>How do you want to be contacted?</p>
+
+                <div class="contact-method">
+                    <label for="contact-phone">Phone</label>
+                    <input name="contact" type="radio" value="phone" id="contact-phone">
+
+                    <label for="contact-email">Email</label>
+                    <input name="contact" type="radio" value="email" id="contact-email">
+                </div>
+
+                <div id="phone-date-time" class="hidden">
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+
+                    <label for="time">Time</label>
+                    <input type="time" id="time" min="09:00" max="18:00">
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Submit" class="button-green">
+        </form>
+    </main>
+    
+    <footer class="footer section">
+        <div class="container container-footer">
+            <nav class="nav">
+                <a href="about.html" class="footer-link">About Us</a>
+                <a href="listings.html" class="footer-link">Listings</a>
+                <a href="blog.html" class="footer-link">Blog</a>
+                <a href="contact.html" class="footer-link">Contact</a>
+            </nav>
+        </div> <!--.container-->
+
+        <p class="copyright">&copy; 2025 el_dev | All rights reserved</p>
+    </footer>
+    
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>
