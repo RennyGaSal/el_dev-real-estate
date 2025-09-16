@@ -1,0 +1,27 @@
+@use "sass:color";
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.content-about {
+    @include m.tablet {
+        @include m.grid(2, 2rem);
+    }
+
+    .image {
+        padding: 2rem 0 0 0;
+    }
+}
+
+.text-about {
+    font-size: 2rem;
+    margin: 0;
+    padding-left: 1rem 0 3rem 0;
+
+    blockquote {
+        font-weight: v.$black;
+        border-left: 4px solid color.adjust(v.$green, $alpha: -0.2);
+        margin-left: -1rem;
+        padding-left: 1rem;
+        color: color.adjust(v.$yellow, $alpha: -0.1);
+    }
+}
