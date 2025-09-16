@@ -11,5 +11,5 @@
 }
 
 .button-green {
-    @include m.button(v.$green, inline);    
+    @include m.button(v.$green, inline-block);    
 }
