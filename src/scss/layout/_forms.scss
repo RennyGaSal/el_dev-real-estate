@@ -1,0 +1,64 @@
+@use "sass:color";
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.form {
+    p {
+        font-size: 1.4rem;
+        color: v.$darkGray;
+        margin: 0.5rem 0 1rem 0;
+    }
+
+    legend {
+        font-size: 2rem;
+        color: v.$darkGray;
+    }
+
+    label {
+        font-weight: v.$bold;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    input:not([type="submit"]), 
+    textarea, 
+    select {
+        padding: 1rem;
+        display: block;
+        width: 100%;
+        background-color: v.$white;
+        border: 0.1rem solid v.$gray;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    textarea {
+        min-height: 10rem;
+    }
+
+    .contact-method {
+        max-width: 30rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0.5rem 0 1.5rem 0;
+    }
+
+    input[type="radio"] {
+        margin: 0;
+        width: auto;
+    }
+
+    input:not([type="radio"]):not([type="submit"]):focus,
+    textarea:focus {
+        outline: none;
+        border-color: color.adjust(v.$yellow, $alpha: -0.5);
+        box-shadow: 0 0 1rem color.adjust(v.$yellow, $alpha: -0.5);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .button-green {
+        border: none;
+    }
+
+}
