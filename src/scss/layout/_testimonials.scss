@@ -3,10 +3,10 @@
 @use '../base/mixins' as m;
 
 .testimonial {
-    background-color: v.$gray;
+    background-color: color.adjust(v.$gray, $lightness: -10%);
     font-size: 2.2rem;
     padding: 2rem;
-    color: v.$darkGray;
+    color: v.$white;
     border-radius: 2rem;
 
     blockquote {

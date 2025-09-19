@@ -3,6 +3,19 @@
 @use '../base/mixins' as m;
 
 .form {
+
+    fieldset {
+        margin-bottom: 2rem;
+
+        @include m.tablet {
+            margin-bottom: 4rem;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
     p {
         font-size: 1.4rem;
         color: v.$darkGray;
@@ -11,7 +24,7 @@
 
     legend {
         font-size: 2rem;
-        color: v.$darkGray;
+        color: v.$yellow;
     }
 
     label {
