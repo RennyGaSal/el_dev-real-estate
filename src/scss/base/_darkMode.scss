@@ -1,0 +1,82 @@
+@use "sass:color";
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.dark-mode {
+    background-color: color.adjust(v.$darkGray, $lightness: -10%);
+
+    p {
+        color: v.$white;
+    }
+
+    a, h1, h2, h3, h4 {
+        color: v.$gray;
+    }
+
+    .listing {
+        background-color: v.$darkGray;
+        border: 0.1rem solid v.$darkGray;
+
+        &:hover {
+            background-color: color.adjust(v.$darkGray, $lightness: -5%);
+            border-color: color.adjust(v.$gray, $lightness: -50%);
+        }
+
+        .price {
+            color: v.$green;
+        }
+
+        .icon {
+            filter: invert(1);
+        }
+    }
+
+    .property-summary {
+        .price {
+            color: v.$green;
+        }
+
+        .icon {
+            filter: invert(1);
+        }
+    }
+
+    .testimonial {
+        background-color: color.adjust(v.$darkGray, $lightness: -5%);
+        
+        blockquote {
+            color: v.$gray;
+        }
+
+        p {
+            color: v.$yellow;
+        }
+    }
+
+    .form {
+        legend {
+            color: v.$yellow;
+        }
+
+        label,
+        p {
+            color: v.$gray;
+        }
+
+        input:not([type="submit"]),
+        textarea,
+        select {
+            background-color: color.adjust(v.$darkGray, $lightness: -10%);
+            border: 0.1rem solid v.$darkGray;
+            color: v.$white;
+
+            &::placeholder {
+                color: color.adjust(v.$gray, $lightness: -30%);
+            }
+        }
+
+        fieldset {
+            border-color: v.$yellow;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.no-webp .intro {
+    background: url('../img/header.jpg');
+}
+
+.webp .intro {
+    background: url('../img/header.webp');
+}
+
+.header {
+    background-color: v.$darkGray;
+    padding: 1rem 0 3rem 0;
+
+    &.intro {
+        background-position: center center;
+        background-size: cover;
+        
+        @include m.tablet {
+            min-height: 70rem;
+        }
+
+        .container-header {
+            @include m.tablet {
+            min-height: 70rem;
+            }
+        }
+    }
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    h1 {
+        text-align: left;
+        color: v.$white;
+        font-weight: v.$bold;
+        line-height: 2;
+        max-width: 60rem;
+    }
+}
