@@ -4,7 +4,8 @@
   "description": "A responsive real estate website",
   "main": "gulpfile.js",
   "scripts": {
-    "dev": "gulp"
+    "dev": "gulp",
+    "build": "gulp build"
   },
   "author": "Renny Galárraga @RennyGaSal",
   "license": "ISC",
