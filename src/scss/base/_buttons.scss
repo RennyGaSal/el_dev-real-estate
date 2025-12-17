@@ -8,8 +8,14 @@
 
 .button-yellow-block {
     @include m.button(v.$yellow, block);
+    width: 100%;
 }
 
 .button-green {
     @include m.button(v.$green, inline-block);    
+}
+
+.button-green-block {
+    @include m.button(v.$green, block);
+    width: 100%;
 }

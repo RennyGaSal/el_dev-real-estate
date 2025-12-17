@@ -1,42 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate</title>
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container container-header">
-            <div class="bar">
-                <a href="/">
-                    <img src="build/img/logo.svg" alt="Real Estate Logo">
-                </a>
-                
-                <div class="mobile-menu">
-                    <img src="build/img/bars.svg" alt="Mobile Menu Icon" />
-                </div>
+<?php
+  declare(strict_types=1);
+  require 'includes/functions.php';
 
-                <div class="right">
-                    <img
-                        src="build/img/dark-mode.svg"
-                        alt="Dark Mode Icon"
-                        class="dark-mode-button"
-                    />
-                </div>
-                
-                <nav class="nav">
-                    <a href="about.html" class="header-link">About Us</a>
-                    <a href="listings.html" class="header-link">Listings</a>
-                    <a href="blog.html" class="header-link">Blog</a>
-                    <a href="contact.html" class="header-link">Contact</a>
-                </nav>
-
-            </div> <!--.bar-->
-            
-        </div> <!--.container-->
-    </header>
+  includeTemplate('header');
+?>
 
     <main class="container section">
         <h1>About Us</h1>
@@ -84,19 +51,4 @@
         </div>
     </section>
     
-    <footer class="footer section">
-        <div class="container container-footer">
-            <nav class="nav">
-                <a href="about.html" class="footer-link">About Us</a>
-                <a href="listings.html" class="footer-link">Listings</a>
-                <a href="blog.html" class="footer-link">Blog</a>
-                <a href="contact.html" class="footer-link">Contact</a>
-            </nav>
-        </div> <!--.container-->
-
-        <p class="copyright">&copy; 2025 el_dev | All rights reserved</p>
-    </footer>
-    
-    <script src="build/js/bundle.min.js"></script>
-</body>
-</html>
+<?php includeTemplate('footer') ?>

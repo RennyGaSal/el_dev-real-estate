@@ -1,42 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate</title>
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container container-header">
-            <div class="bar">
-                <a href="/">
-                    <img src="build/img/logo.svg" alt="Real Estate Logo">
-                </a>
+<?php
+  declare(strict_types=1);
+  require 'includes/functions.php';
 
-                <div class="mobile-menu">
-                    <img src="build/img/bars.svg" alt="Mobile Menu Icon" />
-                </div>
-
-                <div class="right">
-                    <img
-                        src="build/img/dark-mode.svg"
-                        alt="Dark Mode Icon"
-                        class="dark-mode-button"
-                    />
-                </div>
-
-                <nav class="nav">
-                    <a href="about.html" class="header-link">About Us</a>
-                    <a href="listings.html" class="header-link">Listings</a>
-                    <a href="blog.html" class="header-link">Blog</a>
-                    <a href="contact.html" class="header-link">Contact</a>
-                </nav>
-
-            </div> <!--.bar-->
-            
-        </div> <!--.container-->
-    </header>
+  includeTemplate('header');
+?>
 
     <main class="container section content-center">
         <h1>Our Blog</h1>
@@ -55,7 +22,7 @@
           </div>
 
           <div class="entry-text">
-            <a href="entry.html">
+            <a href="entry.php">
               <h4>Terrace on the roof of your house</h4>
             </a>
             <p class="meta-info">
@@ -81,7 +48,7 @@
           </div>
 
           <div class="entry-text">
-            <a href="entry.html">
+            <a href="entry.php">
               <h4>Guide to decorating your home</h4>
             </a>
             <p class="meta-info">
@@ -107,7 +74,7 @@
           </div>
 
           <div class="entry-text">
-            <a href="entry.html">
+            <a href="entry.php">
               <h4>Guide to decorating your home</h4>
             </a>
             <p class="meta-info">
@@ -133,7 +100,7 @@
           </div>
 
           <div class="entry-text">
-            <a href="entry.html">
+            <a href="entry.php">
               <h4>Guide to decorating your home</h4>
             </a>
             <p class="meta-info">
@@ -148,19 +115,4 @@
         </article>
     </main>
     
-    <footer class="footer section">
-        <div class="container container-footer">
-            <nav class="nav">
-                <a href="about.html" class="footer-link">About Us</a>
-                <a href="listings.html" class="footer-link">Listings</a>
-                <a href="blog.html" class="footer-link">Blog</a>
-                <a href="contact.html" class="footer-link">Contact</a>
-            </nav>
-        </div> <!--.container-->
-
-        <p class="copyright">&copy; 2025 el_dev | All rights reserved</p>
-    </footer>
-    
-    <script src="build/js/bundle.min.js"></script>
-</body>
-</html>
+<?php includeTemplate('footer') ?>
